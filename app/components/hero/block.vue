@@ -2,24 +2,25 @@
   <section class="hero relative min-h-screen flex items-center justify-center overflow-hidden">
     <!-- Background -->
     <div class="absolute inset-0 bg-[#001151] z-0">
-      <img 
-        src="https://the7.io/fse-corporate/wp-content/uploads/sites/142/2025/08/co-b-l.svg" 
-        alt="Background" 
-        class="w-full h-full object-cover "
-      >
+      <img src="https://the7.io/fse-corporate/wp-content/uploads/sites/142/2025/08/co-b-l.svg" alt="Background"
+        class="w-full h-full object-cover ">
     </div>
 
     <!-- Content -->
     <div class="container mx-auto px-4 relative z-10 text-center">
       <!-- Welcome Text -->
-      <div class="mb-6">
-        <p class="text-blue-300 text-2xl font-medium">Welcome to daddytemplate 老爹模板</p>
+      <div
+        class="mb-8 w-fit mx-auto flex items-center gap-3 bg-white/5 border border-white/10 px-4 py-1.5 rounded-full backdrop-blur-sm">
+        <span class="w-1.5 h-1.5 rounded-full bg-blue-400 shadow-[0_0_8px_#60a5fa]"></span>
+        <p class="text-blue-200 text-xs font-bold tracking-[0.2em] uppercase whitespace-nowrap">
+          欢迎来到老爹模板
+        </p>
       </div>
 
       <!-- Main Heading -->
       <div class="mb-8">
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight max-w-[800px] mx-auto">
-         Your Global Business Journey Starts Here
+          Your Global Business Journey Starts Here
         </h1>
       </div>
 
@@ -35,7 +36,8 @@
         <button class="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition-all font-medium">
           Discover our services
         </button>
-        <button class="bg-transparent text-white border border-white px-6 py-3 rounded-md hover:bg-white hover:text-[#0c1a38] transition-all font-medium">
+        <button
+          class="bg-transparent text-white border border-white px-6 py-3 rounded-md hover:bg-white hover:text-[#0c1a38] transition-all font-medium">
           Get a quote now
         </button>
       </div>
@@ -110,8 +112,9 @@ defineProps({
 
 
 
-.hero > .container {
+.hero>.container {
   position: relative;
   z-index: 2;
 }
+
 </style>

@@ -1,9 +1,6 @@
 {
-  "logoUrl": "/img/logo2.svg",
-  "logoName": "Your Logo", 
-  "ctaButton": "Get Started",
-  "navItems": [
-    { "label": "Home", "href": "/home" },
-    { "label": "About", "href": "/about" }
-  ]
+  "logo": {
+    "logoUrl": "/img/logo2.svg",
+    "logoName": "Your Logo"
+  }
 }
