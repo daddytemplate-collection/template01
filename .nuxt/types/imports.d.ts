@@ -68,7 +68,6 @@ declare global {
   const onUnmounted: typeof import('../../node_modules/vue').onUnmounted
   const onUpdated: typeof import('../../node_modules/vue').onUpdated
   const onWatcherCleanup: typeof import('../../node_modules/vue').onWatcherCleanup
-  const parseMarkdown: typeof import('../../node_modules/@nuxtjs/mdc/dist/runtime/parser').parseMarkdown
   const prefetchComponents: typeof import('../../node_modules/nuxt/dist/app/composables/preload').prefetchComponents
   const preloadComponents: typeof import('../../node_modules/nuxt/dist/app/composables/preload').preloadComponents
   const preloadPayload: typeof import('../../node_modules/nuxt/dist/app/composables/payload').preloadPayload
@@ -76,10 +75,6 @@ declare global {
   const prerenderRoutes: typeof import('../../node_modules/nuxt/dist/app/composables/ssr').prerenderRoutes
   const provide: typeof import('../../node_modules/vue').provide
   const proxyRefs: typeof import('../../node_modules/vue').proxyRefs
-  const queryCollection: typeof import('../../node_modules/@nuxt/content/dist/runtime/client').queryCollection
-  const queryCollectionItemSurroundings: typeof import('../../node_modules/@nuxt/content/dist/runtime/client').queryCollectionItemSurroundings
-  const queryCollectionNavigation: typeof import('../../node_modules/@nuxt/content/dist/runtime/client').queryCollectionNavigation
-  const queryCollectionSearchSections: typeof import('../../node_modules/@nuxt/content/dist/runtime/client').queryCollectionSearchSections
   const reactive: typeof import('../../node_modules/vue').reactive
   const readonly: typeof import('../../node_modules/vue').readonly
   const ref: typeof import('../../node_modules/vue').ref
@@ -95,7 +90,6 @@ declare global {
   const shallowReadonly: typeof import('../../node_modules/vue').shallowReadonly
   const shallowRef: typeof import('../../node_modules/vue').shallowRef
   const showError: typeof import('../../node_modules/nuxt/dist/app/composables/error').showError
-  const stringifyMarkdown: typeof import('../../node_modules/@nuxtjs/mdc/dist/runtime/stringify').stringifyMarkdown
   const toRaw: typeof import('../../node_modules/vue').toRaw
   const toRef: typeof import('../../node_modules/vue').toRef
   const toRefs: typeof import('../../node_modules/vue').toRefs
@@ -103,7 +97,6 @@ declare global {
   const triggerRef: typeof import('../../node_modules/vue').triggerRef
   const tryUseNuxtApp: typeof import('../../node_modules/nuxt/dist/app/nuxt').tryUseNuxtApp
   const unref: typeof import('../../node_modules/vue').unref
-  const unwrapSlot: typeof import('../../node_modules/@nuxtjs/mdc/dist/runtime/utils/node').flatUnwrap
   const updateAppConfig: typeof import('../../node_modules/nuxt/dist/app/config').updateAppConfig
   const updateSiteConfig: typeof import('../../node_modules/nuxt-site-config/dist/runtime/app/composables/updateSiteConfig').updateSiteConfig
   const useAnnouncer: typeof import('../../node_modules/nuxt/dist/app/composables/announcer').useAnnouncer
@@ -274,7 +267,6 @@ declare module 'vue' {
     readonly onUnmounted: UnwrapRef<typeof import('../../node_modules/vue')['onUnmounted']>
     readonly onUpdated: UnwrapRef<typeof import('../../node_modules/vue')['onUpdated']>
     readonly onWatcherCleanup: UnwrapRef<typeof import('../../node_modules/vue')['onWatcherCleanup']>
-    readonly parseMarkdown: UnwrapRef<typeof import('../../node_modules/@nuxtjs/mdc/dist/runtime/parser')['parseMarkdown']>
     readonly prefetchComponents: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/preload')['prefetchComponents']>
     readonly preloadComponents: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/preload')['preloadComponents']>
     readonly preloadPayload: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/payload')['preloadPayload']>
@@ -282,10 +274,6 @@ declare module 'vue' {
     readonly prerenderRoutes: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/ssr')['prerenderRoutes']>
     readonly provide: UnwrapRef<typeof import('../../node_modules/vue')['provide']>
     readonly proxyRefs: UnwrapRef<typeof import('../../node_modules/vue')['proxyRefs']>
-    readonly queryCollection: UnwrapRef<typeof import('../../node_modules/@nuxt/content/dist/runtime/client')['queryCollection']>
-    readonly queryCollectionItemSurroundings: UnwrapRef<typeof import('../../node_modules/@nuxt/content/dist/runtime/client')['queryCollectionItemSurroundings']>
-    readonly queryCollectionNavigation: UnwrapRef<typeof import('../../node_modules/@nuxt/content/dist/runtime/client')['queryCollectionNavigation']>
-    readonly queryCollectionSearchSections: UnwrapRef<typeof import('../../node_modules/@nuxt/content/dist/runtime/client')['queryCollectionSearchSections']>
     readonly reactive: UnwrapRef<typeof import('../../node_modules/vue')['reactive']>
     readonly readonly: UnwrapRef<typeof import('../../node_modules/vue')['readonly']>
     readonly ref: UnwrapRef<typeof import('../../node_modules/vue')['ref']>
@@ -301,7 +289,6 @@ declare module 'vue' {
     readonly shallowReadonly: UnwrapRef<typeof import('../../node_modules/vue')['shallowReadonly']>
     readonly shallowRef: UnwrapRef<typeof import('../../node_modules/vue')['shallowRef']>
     readonly showError: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/error')['showError']>
-    readonly stringifyMarkdown: UnwrapRef<typeof import('../../node_modules/@nuxtjs/mdc/dist/runtime/stringify')['stringifyMarkdown']>
     readonly toRaw: UnwrapRef<typeof import('../../node_modules/vue')['toRaw']>
     readonly toRef: UnwrapRef<typeof import('../../node_modules/vue')['toRef']>
     readonly toRefs: UnwrapRef<typeof import('../../node_modules/vue')['toRefs']>
@@ -309,7 +296,6 @@ declare module 'vue' {
     readonly triggerRef: UnwrapRef<typeof import('../../node_modules/vue')['triggerRef']>
     readonly tryUseNuxtApp: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/nuxt')['tryUseNuxtApp']>
     readonly unref: UnwrapRef<typeof import('../../node_modules/vue')['unref']>
-    readonly unwrapSlot: UnwrapRef<typeof import('../../node_modules/@nuxtjs/mdc/dist/runtime/utils/node')['flatUnwrap']>
     readonly updateAppConfig: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/config')['updateAppConfig']>
     readonly updateSiteConfig: UnwrapRef<typeof import('../../node_modules/nuxt-site-config/dist/runtime/app/composables/updateSiteConfig')['updateSiteConfig']>
     readonly useAnnouncer: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/announcer')['useAnnouncer']>
