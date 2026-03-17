@@ -13,5 +13,16 @@
     "transactionsProcessed": "$1.5M",
     "customerSatisfaction": "98.2%",
     "phoneNumber": "+86 (136) 5661-7631"
+  },
+  "service": {
+    "welcomeText": "Why Choose Us?",
+    "mainHeading": "Solutions tailored to your needs",
+    "subtitle": "Ultrices tellus - luctus nec, luctus consectetur adipiscing elit tellus mattis ullamcorper dapibus.",
+     "list": [
+      { "title": "Investor & fund management", "description": "Suspendisse dignissim sapien vitae placerat tristique. Suspendisse faucibus sed arcu vitae rutrum. Vestibulum pellentesque libero nec lacus congue laoreet lorem ipsum amet metus .", "icon": "Globe" },
+      { "title": "Crypto currency operations", "description": "Suspendisse dignissim sapien vitae placerat tristique. Suspendisse faucibus sed arcu vitae rutrum. Vestibulum pellentesque libero nec lacus congue laoreet lorem ipsum amet metus .", "icon": "Bitcoin" },
+      { "title": "Financial consulting", "description": "Suspendisse dignissim sapien vitae placerat tristique. Suspendisse faucibus sed arcu vitae rutrum. Vestibulum pellentesque libero nec lacus congue laoreet lorem ipsum amet metus .", "icon": "CircleDollarSign" },
+      { "title": "Wealth Planning", "description": "Suspendisse dignissim sapien vitae placerat tristique. Suspendisse faucibus sed arcu vitae rutrum. Vestibulum pellentesque libero nec lacus congue laoreet lorem ipsum amet metus .", "icon": "Globe" }
+    ]
   }
 }

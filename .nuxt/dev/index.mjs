@@ -795,7 +795,12 @@ const _inlineRuntimeConfig = {
     "version": "3.2.21",
     "debug": false,
     "multiTenancy": []
-  }
+  },
+  "appConfigSchema": {
+    "properties": "",
+    "default": ""
+  },
+  "contentSchema": {}
 };
 const envOptions = {
   prefix: "NITRO_",
@@ -2397,7 +2402,22 @@ _TicGaqSb1PJgWdvT2qD6lwLrgsYnplzV1uz5XS2mKM,
 _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw
 ];
 
-const assets = {};
+const assets = {
+  "/index.mjs": {
+    "type": "text/javascript; charset=utf-8",
+    "etag": "\"37c86-Wox7DZPb5H/YZXwnx0TVWmRgxM8\"",
+    "mtime": "2026-03-17T07:38:45.701Z",
+    "size": 228486,
+    "path": "index.mjs"
+  },
+  "/index.mjs.map": {
+    "type": "application/json",
+    "etag": "\"e7a7d-b1dMfxZ5OrdeCa3Un2qVsMLYZYQ\"",
+    "mtime": "2026-03-17T07:38:45.703Z",
+    "size": 948861,
+    "path": "index.mjs.map"
+  }
+};
 
 function readAsset (id) {
   const serverDir = dirname$1(fileURLToPath(globalThis._importMeta_.url));

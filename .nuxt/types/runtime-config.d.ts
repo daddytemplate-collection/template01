@@ -107,6 +107,14 @@ import { RuntimeConfig as UserRuntimeConfig, PublicRuntimeConfig as UserPublicRu
 
       multiTenancy: Array<any>,
    },
+
+   appConfigSchema: {
+      properties: any,
+
+      default: any,
+   },
+
+   contentSchema: any,
   }
   interface SharedPublicRuntimeConfig {
    mdc: {

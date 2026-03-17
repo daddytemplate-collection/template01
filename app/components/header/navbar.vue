@@ -149,8 +149,10 @@ const mobileDropdowns = ref<Record<number, boolean>>({})
 
 
 const siteConfig = ref({
-    logoName: '',
-    logoUrl: '',
+    logo:{
+        logoName: '',
+        logoUrl: '',
+    }
 
 })
 
@@ -223,6 +225,7 @@ onMounted(async () => {
         if (response.ok) {
             const data = await response.json()
             siteConfig.value = { ...siteConfig.value, ...data }
+            console.log('siteConfig.value',siteConfig.value)    
         }
     } catch (e) {
         console.warn("Setting.json not found")

@@ -74,13 +74,12 @@
 </template>
 
 <script setup lang="ts">
+import { ref, onMounted } from 'vue'
 import {
     Phone,
 } from 'lucide-vue-next'
 const siteConfig = ref({
-    logoName: '',
-    logoUrl: '',
-
+    
 })
 onMounted(async () => {
     try {
@@ -92,7 +91,6 @@ onMounted(async () => {
     } catch (e) {
         console.warn("Setting.json not found")
     }
-    window.addEventListener('scroll', handleScroll)
 })
 </script>
 
