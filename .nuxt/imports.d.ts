@@ -33,6 +33,7 @@ export { definePageMeta, PageMeta } from '#app/composables/pages';
 export { defineLazyHydrationComponent } from '#app/composables/lazy-hydration';
 export { useProductsNav } from '../app/composables/useProductsNav';
 export { useToast } from '../app/composables/useToast';
+export { contactSchema } from '../app/utils/validation';
 export { getNitroOrigin } from '../node_modules/.pnpm/nuxt-site-config@3.2.21_magicast@0.5.2_vite@7.3.1_jiti@2.6.1_lightningcss@1.31.1_terser_fce97e60baf73fab57ba9205268ef960/node_modules/nuxt-site-config/dist/runtime/app/composables/getNitroOrigin';
 export { updateSiteConfig } from '../node_modules/.pnpm/nuxt-site-config@3.2.21_magicast@0.5.2_vite@7.3.1_jiti@2.6.1_lightningcss@1.31.1_terser_fce97e60baf73fab57ba9205268ef960/node_modules/nuxt-site-config/dist/runtime/app/composables/updateSiteConfig';
 export { useNitroOrigin } from '../node_modules/.pnpm/nuxt-site-config@3.2.21_magicast@0.5.2_vite@7.3.1_jiti@2.6.1_lightningcss@1.31.1_terser_fce97e60baf73fab57ba9205268ef960/node_modules/nuxt-site-config/dist/runtime/app/composables/useNitroOrigin';

@@ -17,8 +17,11 @@ interface _GlobalComponents {
   Alert: typeof import("../../app/components/Alert.vue")['default']
   Counter: typeof import("../../app/components/Counter.vue")['default']
   TheToast: typeof import("../../app/components/TheToast.vue")['default']
+  FooterBlock: typeof import("../../app/components/footer/block.vue")['default']
   HeaderNavbar: typeof import("../../app/components/header/navbar.vue")['default']
   HeroBlock: typeof import("../../app/components/hero/block.vue")['default']
+  PartnerBlock: typeof import("../../app/components/partner/block.vue")['default']
+  ProductBlock: typeof import("../../app/components/product/block.vue")['default']
   ServiceBlock: typeof import("../../app/components/service/block.vue")['default']
   ProseA: typeof import("../../node_modules/.pnpm/@nuxtjs+mdc@0.20.2_magicast@0.5.2/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseA.vue")['default']
   ProseBlockquote: typeof import("../../node_modules/.pnpm/@nuxtjs+mdc@0.20.2_magicast@0.5.2/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseBlockquote.vue")['default']
@@ -77,8 +80,11 @@ interface _GlobalComponents {
   LazyAlert: LazyComponent<typeof import("../../app/components/Alert.vue")['default']>
   LazyCounter: LazyComponent<typeof import("../../app/components/Counter.vue")['default']>
   LazyTheToast: LazyComponent<typeof import("../../app/components/TheToast.vue")['default']>
+  LazyFooterBlock: LazyComponent<typeof import("../../app/components/footer/block.vue")['default']>
   LazyHeaderNavbar: LazyComponent<typeof import("../../app/components/header/navbar.vue")['default']>
   LazyHeroBlock: LazyComponent<typeof import("../../app/components/hero/block.vue")['default']>
+  LazyPartnerBlock: LazyComponent<typeof import("../../app/components/partner/block.vue")['default']>
+  LazyProductBlock: LazyComponent<typeof import("../../app/components/product/block.vue")['default']>
   LazyServiceBlock: LazyComponent<typeof import("../../app/components/service/block.vue")['default']>
   LazyProseA: LazyComponent<typeof import("../../node_modules/.pnpm/@nuxtjs+mdc@0.20.2_magicast@0.5.2/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseA.vue")['default']>
   LazyProseBlockquote: LazyComponent<typeof import("../../node_modules/.pnpm/@nuxtjs+mdc@0.20.2_magicast@0.5.2/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseBlockquote.vue")['default']>

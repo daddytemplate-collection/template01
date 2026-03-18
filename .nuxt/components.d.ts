@@ -17,8 +17,11 @@ type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {},
 export const Alert: typeof import("../app/components/Alert.vue")['default']
 export const Counter: typeof import("../app/components/Counter.vue")['default']
 export const TheToast: typeof import("../app/components/TheToast.vue")['default']
+export const FooterBlock: typeof import("../app/components/footer/block.vue")['default']
 export const HeaderNavbar: typeof import("../app/components/header/navbar.vue")['default']
 export const HeroBlock: typeof import("../app/components/hero/block.vue")['default']
+export const PartnerBlock: typeof import("../app/components/partner/block.vue")['default']
+export const ProductBlock: typeof import("../app/components/product/block.vue")['default']
 export const ServiceBlock: typeof import("../app/components/service/block.vue")['default']
 export const ProseA: typeof import("../node_modules/.pnpm/@nuxtjs+mdc@0.20.2_magicast@0.5.2/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseA.vue")['default']
 export const ProseBlockquote: typeof import("../node_modules/.pnpm/@nuxtjs+mdc@0.20.2_magicast@0.5.2/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseBlockquote.vue")['default']
@@ -77,8 +80,11 @@ export const NuxtIsland: typeof import("../node_modules/.pnpm/nuxt@4.4.2_@babel+
 export const LazyAlert: LazyComponent<typeof import("../app/components/Alert.vue")['default']>
 export const LazyCounter: LazyComponent<typeof import("../app/components/Counter.vue")['default']>
 export const LazyTheToast: LazyComponent<typeof import("../app/components/TheToast.vue")['default']>
+export const LazyFooterBlock: LazyComponent<typeof import("../app/components/footer/block.vue")['default']>
 export const LazyHeaderNavbar: LazyComponent<typeof import("../app/components/header/navbar.vue")['default']>
 export const LazyHeroBlock: LazyComponent<typeof import("../app/components/hero/block.vue")['default']>
+export const LazyPartnerBlock: LazyComponent<typeof import("../app/components/partner/block.vue")['default']>
+export const LazyProductBlock: LazyComponent<typeof import("../app/components/product/block.vue")['default']>
 export const LazyServiceBlock: LazyComponent<typeof import("../app/components/service/block.vue")['default']>
 export const LazyProseA: LazyComponent<typeof import("../node_modules/.pnpm/@nuxtjs+mdc@0.20.2_magicast@0.5.2/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseA.vue")['default']>
 export const LazyProseBlockquote: LazyComponent<typeof import("../node_modules/.pnpm/@nuxtjs+mdc@0.20.2_magicast@0.5.2/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseBlockquote.vue")['default']>

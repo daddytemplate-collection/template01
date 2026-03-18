@@ -5,7 +5,7 @@
         <slot />
     </div>
     <!-- 页脚 -->
-   
+    <FooterBlock />
 </template>
 
 <script setup>

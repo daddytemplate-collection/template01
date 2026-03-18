@@ -9,6 +9,7 @@ declare global {
   const clearNuxtData: typeof import('../../node_modules/.pnpm/nuxt@4.4.2_@babel+core@7.29.0_@babel+plugin-syntax-jsx@7.28.6_@babel+core@7.29.0__@parc_4345ff1cec2b6b7734613e7fa5275557/node_modules/nuxt/dist/app/composables/asyncData').clearNuxtData
   const clearNuxtState: typeof import('../../node_modules/.pnpm/nuxt@4.4.2_@babel+core@7.29.0_@babel+plugin-syntax-jsx@7.28.6_@babel+core@7.29.0__@parc_4345ff1cec2b6b7734613e7fa5275557/node_modules/nuxt/dist/app/composables/state').clearNuxtState
   const computed: typeof import('../../node_modules/.pnpm/vue@3.5.30_typescript@5.9.3/node_modules/vue').computed
+  const contactSchema: typeof import('../../app/utils/validation').contactSchema
   const createError: typeof import('../../node_modules/.pnpm/nuxt@4.4.2_@babel+core@7.29.0_@babel+plugin-syntax-jsx@7.28.6_@babel+core@7.29.0__@parc_4345ff1cec2b6b7734613e7fa5275557/node_modules/nuxt/dist/app/composables/error').createError
   const createSitePathResolver: typeof import('../../node_modules/.pnpm/nuxt-site-config@3.2.21_magicast@0.5.2_vite@7.3.1_jiti@2.6.1_lightningcss@1.31.1_terser_fce97e60baf73fab57ba9205268ef960/node_modules/nuxt-site-config/dist/runtime/app/composables/utils').createSitePathResolver
   const createUseAsyncData: typeof import('../../node_modules/.pnpm/nuxt@4.4.2_@babel+core@7.29.0_@babel+plugin-syntax-jsx@7.28.6_@babel+core@7.29.0__@parc_4345ff1cec2b6b7734613e7fa5275557/node_modules/nuxt/dist/app/composables/asyncData').createUseAsyncData
@@ -216,6 +217,7 @@ declare module 'vue' {
     readonly clearNuxtData: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.4.2_@babel+core@7.29.0_@babel+plugin-syntax-jsx@7.28.6_@babel+core@7.29.0__@parc_4345ff1cec2b6b7734613e7fa5275557/node_modules/nuxt/dist/app/composables/asyncData')['clearNuxtData']>
     readonly clearNuxtState: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.4.2_@babel+core@7.29.0_@babel+plugin-syntax-jsx@7.28.6_@babel+core@7.29.0__@parc_4345ff1cec2b6b7734613e7fa5275557/node_modules/nuxt/dist/app/composables/state')['clearNuxtState']>
     readonly computed: UnwrapRef<typeof import('../../node_modules/.pnpm/vue@3.5.30_typescript@5.9.3/node_modules/vue')['computed']>
+    readonly contactSchema: UnwrapRef<typeof import('../../app/utils/validation')['contactSchema']>
     readonly createError: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.4.2_@babel+core@7.29.0_@babel+plugin-syntax-jsx@7.28.6_@babel+core@7.29.0__@parc_4345ff1cec2b6b7734613e7fa5275557/node_modules/nuxt/dist/app/composables/error')['createError']>
     readonly createSitePathResolver: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt-site-config@3.2.21_magicast@0.5.2_vite@7.3.1_jiti@2.6.1_lightningcss@1.31.1_terser_fce97e60baf73fab57ba9205268ef960/node_modules/nuxt-site-config/dist/runtime/app/composables/utils')['createSitePathResolver']>
     readonly createUseAsyncData: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.4.2_@babel+core@7.29.0_@babel+plugin-syntax-jsx@7.28.6_@babel+core@7.29.0__@parc_4345ff1cec2b6b7734613e7fa5275557/node_modules/nuxt/dist/app/composables/asyncData')['createUseAsyncData']>
