@@ -22,6 +22,7 @@ export const HeaderNavbar: typeof import("../app/components/header/navbar.vue")[
 export const HeroBlock: typeof import("../app/components/hero/block.vue")['default']
 export const PartnerBlock: typeof import("../app/components/partner/block.vue")['default']
 export const ProductBlock: typeof import("../app/components/product/block.vue")['default']
+export const ProductCard: typeof import("../app/components/product/card.vue")['default']
 export const ServiceBlock: typeof import("../app/components/service/block.vue")['default']
 export const ProseA: typeof import("../node_modules/.pnpm/@nuxtjs+mdc@0.20.2_magicast@0.5.2/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseA.vue")['default']
 export const ProseBlockquote: typeof import("../node_modules/.pnpm/@nuxtjs+mdc@0.20.2_magicast@0.5.2/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseBlockquote.vue")['default']
@@ -85,6 +86,7 @@ export const LazyHeaderNavbar: LazyComponent<typeof import("../app/components/he
 export const LazyHeroBlock: LazyComponent<typeof import("../app/components/hero/block.vue")['default']>
 export const LazyPartnerBlock: LazyComponent<typeof import("../app/components/partner/block.vue")['default']>
 export const LazyProductBlock: LazyComponent<typeof import("../app/components/product/block.vue")['default']>
+export const LazyProductCard: LazyComponent<typeof import("../app/components/product/card.vue")['default']>
 export const LazyServiceBlock: LazyComponent<typeof import("../app/components/service/block.vue")['default']>
 export const LazyProseA: LazyComponent<typeof import("../node_modules/.pnpm/@nuxtjs+mdc@0.20.2_magicast@0.5.2/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseA.vue")['default']>
 export const LazyProseBlockquote: LazyComponent<typeof import("../node_modules/.pnpm/@nuxtjs+mdc@0.20.2_magicast@0.5.2/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseBlockquote.vue")['default']>

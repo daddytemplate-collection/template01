@@ -94,7 +94,7 @@
                             </div>
 
                             <button type="submit" :disabled="isSubmitting"
-                                class="w-full bg-[#001151] hover:bg-bg-[#001151]/50 text-white font-bold py-4 rounded-xl transition-all flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed">
+                                class="w-full bg-[#001151] cursor-pointer hover:bg-bg-[#001151]/50 text-white font-bold py-4 rounded-xl transition-all flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed">
                                 <!-- 加载状态 -->
                                 <template v-if="isSubmitting">
                                     <Loader2 class="w-4 h-4 animate-spin" />
@@ -116,6 +116,7 @@
 </template>
 
 <script setup lang="ts">
+
 import { ref, onMounted } from 'vue'
 import { Mail, Phone, MapPin, Send, Loader2 } from 'lucide-vue-next'
 import { useForm } from 'vee-validate';
@@ -127,12 +128,18 @@ const siteConfig = ref<any>({ contact: {} })
 // 1. 使用 vee-validate 管理状态
 const { defineField, handleSubmit, errors, isSubmitting, resetForm } = useForm({
     validationSchema: contactSchema,
+     initialValues: {
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+    },
 });
 
-const [name, nameAttrs] = defineField('name');
-const [email, emailAttrs] = defineField('email');
-const [subject, subjectAttrs] = defineField('subject');
-const [message, messageAttrs] = defineField('message');
+const [name, nameAttrs] = defineField('name',{validateOnModelUpdate: false});
+const [email, emailAttrs] = defineField('email',{validateOnModelUpdate: false});
+const [subject, subjectAttrs] = defineField('subject',{validateOnModelUpdate: false});
+const [message, messageAttrs] = defineField('message',{validateOnModelUpdate: false});
 
 // 2. 封装发送逻辑
 const onSubmit = handleSubmit(async (values) => {

@@ -22,6 +22,7 @@ interface _GlobalComponents {
   HeroBlock: typeof import("../../app/components/hero/block.vue")['default']
   PartnerBlock: typeof import("../../app/components/partner/block.vue")['default']
   ProductBlock: typeof import("../../app/components/product/block.vue")['default']
+  ProductCard: typeof import("../../app/components/product/card.vue")['default']
   ServiceBlock: typeof import("../../app/components/service/block.vue")['default']
   ProseA: typeof import("../../node_modules/.pnpm/@nuxtjs+mdc@0.20.2_magicast@0.5.2/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseA.vue")['default']
   ProseBlockquote: typeof import("../../node_modules/.pnpm/@nuxtjs+mdc@0.20.2_magicast@0.5.2/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseBlockquote.vue")['default']
@@ -85,6 +86,7 @@ interface _GlobalComponents {
   LazyHeroBlock: LazyComponent<typeof import("../../app/components/hero/block.vue")['default']>
   LazyPartnerBlock: LazyComponent<typeof import("../../app/components/partner/block.vue")['default']>
   LazyProductBlock: LazyComponent<typeof import("../../app/components/product/block.vue")['default']>
+  LazyProductCard: LazyComponent<typeof import("../../app/components/product/card.vue")['default']>
   LazyServiceBlock: LazyComponent<typeof import("../../app/components/service/block.vue")['default']>
   LazyProseA: LazyComponent<typeof import("../../node_modules/.pnpm/@nuxtjs+mdc@0.20.2_magicast@0.5.2/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseA.vue")['default']>
   LazyProseBlockquote: LazyComponent<typeof import("../../node_modules/.pnpm/@nuxtjs+mdc@0.20.2_magicast@0.5.2/node_modules/@nuxtjs/mdc/dist/runtime/components/prose/ProseBlockquote.vue")['default']>
