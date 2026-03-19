@@ -1,11 +1,11 @@
 <template>
   <div class="bg-white min-h-screen pb-20">
     <!-- 顶部面包屑与背景 (深蓝色系) -->
-    <div class="bg-[#001151] pt-32 pb-20 relative overflow-hidden">
-      <div class="absolute inset-0 opacity-10">
-        <img src="https://the7.io/fse-corporate/wp-content/uploads/sites/142/2025/08/co-b-l.svg"
+    <div class="bg-[#001151] pt-32 pb-20 relative overflow-hidden" style="background-image: url('/img/co-b-r.svg'); background-size: cover; background-position: center;">
+      <!-- <div class="absolute inset-0 opacity-10">
+        <img src="/img/co-b-r.svg"
           class="w-full h-full object-cover">
-      </div>
+      </div> -->
 
       <div class="container mx-auto px-4 relative z-10">
         <nav class="flex items-center gap-2 text-sm font-medium text-blue-200/60 mb-6">
