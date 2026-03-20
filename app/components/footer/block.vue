@@ -101,7 +101,7 @@
                 </div>
 
                 <div class="flex items-center gap-4 text-sm">
-                    <NuxtLink to="/terms" class="text-gray-500 hover:text-[#001151] transition-colors">
+                    <NuxtLink to="/" class="text-gray-500 hover:text-[#001151] transition-colors">
                         Terms & Conditions
                     </NuxtLink>
                     <span class="w-1 h-1 rounded-full bg-gray-300"></span>

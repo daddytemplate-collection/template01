@@ -1,66 +1,50 @@
-import { useAsyncData, useState } from 'nuxt/app'
-import { queryContent } from '@nuxt/content'
-
-// 实现 queryCollectionNavigation 函数
-export const queryCollectionNavigation = async (collection: string) => {
-  try {
-    const { data } = await useAsyncData(`${collection}-navigation`, async () => {
-      // 获取所有产品页面
-      const pages = await queryContent(collection).find()
-      
-      // 构建导航结构
-      const navigation: any[] = []
-      const root: any = {
-        title: 'Products',
-        path: '/products',
-        children: []
-      }
-      
-      // 按目录分组
-      const categories = new Map()
-      
-      for (const page of pages) {
-        // 解析路径，获取分类信息
-        const parts = page._path.split('/').filter(Boolean)
-        if (parts.length >= 2) {
-          const category = parts[1] // 第二个部分是分类
-          
-          if (!categories.has(category)) {
-            categories.set(category, {
-              title: category.charAt(0).toUpperCase() + category.slice(1),
-              path: `/${collection}/${category}`,
-              children: []
-            })
-          }
-        }
-      }
-      
-      // 将分类添加到根节点
-      root.children = Array.from(categories.values())
-      navigation.push(root)
-      
-      return navigation
-    })
-    
-    return data.value || []
-  } catch (error) {
-    console.error('Error fetching navigation:', error)
-    return []
-  }
-}
+// 彻底移除所有 import { ... } from '@nuxt/content'，这是构建失败的直接原因
 
 export const useProductsNav = async () => {
-  // useState 定义一个全局唯一的 key
+  // 使用 useState 确保全局唯一且跨页面缓存
   const productsNav = useState('products-nav', () => [])
 
-  // 如果已经有数据了，直接返回，不再请求
   if (productsNav.value && productsNav.value.length > 0) {
     return { data: productsNav }
   }
 
-  // 否则，请求一次并存入 useState
-  const data = await queryCollectionNavigation('products')
-  
-  productsNav.value = data
+  // 使用全新的 queryCollection API
+  // queryCollection 不需要 import，它是 Nuxt Content v3 自动注入的全局函数
+  const { data } = await useAsyncData('products-navigation', async () => {
+    try {
+      // 1. 获取所有产品
+      const allProducts = await queryCollection('products').all()
+      
+      // 2. 提取分类 (根据路径 /products/category/slug)
+      const categoriesMap = new Map()
+      
+      allProducts.forEach(product => {
+        const parts = product.path.split('/').filter(Boolean)
+        // 假设路径结构是 products -> category -> slug
+        if (parts.length >= 2) {
+          const categorySlug = parts[1]
+          if (!categoriesMap.has(categorySlug)) {
+            categoriesMap.set(categorySlug, {
+              title: categorySlug.charAt(0).toUpperCase() + categorySlug.slice(1),
+              path: `/products/${categorySlug}`,
+              children: [] // 如果需要子项，可以在这里进一步 push
+            })
+          }
+        }
+      })
+
+      // 3. 构建根节点
+      return [{
+        title: 'Products',
+        path: '/products',
+        children: Array.from(categoriesMap.values())
+      }]
+    } catch (error) {
+      console.error('Nav fetch error:', error)
+      return []
+    }
+  })
+
+  productsNav.value = data.value || []
   return { data: productsNav }
 }
