@@ -57,10 +57,5 @@ export default defineNuxtConfig({
     preset: 'static'
   },
   
-  // 使用内存数据库（构建时有效，不依赖文件）
-  content: {
-    database: {
-      type: 'memory'
-    }
-  }
+
 })
