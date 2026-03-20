@@ -45,20 +45,8 @@ export default defineNuxtConfig({
       isCustomElement: (tag) => ['count', 'scroll-reveal', 'scroll-group'].includes(tag) 
     }
   },
-  content: {
-    // 强制使用静态模式，禁止在生产环境尝试连接数据库
-    database: false, 
-    build: {
-      markdown: {
-        highlight: {
-          theme: 'github-dark'
-        }
-      }
-    }
+ content: {
+    // 关键点：这里的配置要精简
+    highlight: { theme: 'github-dark' }
   },
- nitro: {
-    externals: {
-      exclude: ['better-sqlite3']
-    }
-  }
 })
