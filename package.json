@@ -6,7 +6,8 @@
     "build": "nuxt generate",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+      "deploy": "wrangler pages deploy .output/public"
   },
   "dependencies": {
     "@nuxt/content": "^3.12.0",
