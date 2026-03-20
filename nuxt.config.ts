@@ -47,6 +47,7 @@ export default defineNuxtConfig({
   },
   content: {
     // 强制使用静态模式，禁止在生产环境尝试连接数据库
+    database: false, 
     build: {
       markdown: {
         highlight: {
@@ -55,7 +56,9 @@ export default defineNuxtConfig({
       }
     }
   },
-  nitro: {
-    preset: 'vercel',
+ nitro: {
+    externals: {
+      exclude: ['better-sqlite3']
+    }
   }
 })
