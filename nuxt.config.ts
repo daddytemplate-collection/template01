@@ -9,7 +9,7 @@ export default defineNuxtConfig({
       ]
     }
   },
-   app: {
+  app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       link: [
@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     }
   },
   modules: [
-   '@nuxt/content',
+    '@nuxt/content',
     '@nuxtjs/sitemap',
   ],
   future: {
@@ -42,12 +42,27 @@ export default defineNuxtConfig({
   vue: {
     compilerOptions: {
       // 告诉 Vue 忽略这些自定义指令，不要报错
-      isCustomElement: (tag) => ['count', 'scroll-reveal', 'scroll-group'].includes(tag) 
+      isCustomElement: (tag) => ['count', 'scroll-reveal', 'scroll-group'].includes(tag)
     }
   },
- content: {
-    // 关键点：这里的配置要精简
-    database: false,
-    highlight: { theme: 'github-dark' }
+  nitro: {
+    preset: 'static'
   },
+
+  // 预渲染所有页面
+  routeRules: {
+    '/': { prerender: true },
+    '/products/**': { prerender: true },
+    '/about': { prerender: true },
+    // 禁用服务端内容API，避免 better-sqlite3 错误
+    '/__nuxt_content/**': { prerender: false }
+  },
+
+  // 内容模块配置 - 构建时处理所有内容
+  content: {
+    // 使用内存数据库（构建时有效，运行时不依赖）
+    database: {
+      type: 'memory'
+    }
+  }
 })
