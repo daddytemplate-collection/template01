@@ -1,7 +1,11 @@
 # 普通用户模板使用方法
 
 使用方法请访问：[老爹模板DaddyTemplate 文档](https://www.daddytemplate.com/dev-docs)
-如需要部署服务以及配置服务(¥199.00),可直接和我取得联系13656617631
+
+## 如需要部署服务以及配置服务(¥199.00),可直接和我取得联系13656617631
+
+## 模板预览地址
+[模板预览地址](https://template01-wine.vercel.app/)
 ## 开发者使用方法
 
 Make sure to install dependencies:
