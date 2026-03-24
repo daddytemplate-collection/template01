@@ -10,8 +10,8 @@
     "logoName": "Your Logo"
   },
   "hero": {
-    "welcomeText": "欢迎来到template",
-    "mainHeading": "Your Global Business Journey Starts Here!",
+    "welcomeText": "Hello Word",
+    "mainHeading": "欢迎开启您的事业",
     "subtitle": "We exist to help your financial journey from start to finish. Just tell us your goals and we make it happen.",
     "ctaButton": "Discover our products",
     "secondaryButton": "Contact us",
