@@ -6,6 +6,7 @@
 
 ## 模板预览地址
 [模板预览地址](https://template01-wine.vercel.app/)
+如上述的地址无法访问,因服务器在国外,请访问以下[国内模板预览地址](https://www.daddytemplate.com/previews/template01/index.html/)
 ## 开发者使用方法
 
 Make sure to install dependencies:
